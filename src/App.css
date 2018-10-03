@@ -1,0 +1,102 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Bai Jamjuree;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  color: #4CB199;
+  text-decoration: none;
+}
+
+header {
+  height: 7em;
+  color: white;
+  background: #375775;
+  text-align: center;
+}
+
+.SubHeading {
+  margin-top: -1em;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+@media (min-width: 50em) {
+  main {
+    flex-direction: row;
+  }
+}
+
+.Editor {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-height: 40em;
+  margin: 1em;
+}
+
+textarea {
+  color: gray;
+  border: 1px solid gainsboro;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-family: Fira Mono;
+  font-size: 13px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: gray;
+}
+
+#preview {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 1em;
+}
+
+@media (min-width: 50em) {
+  #preview {
+    padding: 1em 2em 1em 1em;
+  }
+}
+
+pre {
+  background: rgb(235, 228, 202);
+  padding: 0.5em 0 0.5em 1em;
+}
+
+code {
+  font-family: Cutive Mono;
+}
+
+blockquote {
+  background: rgb(235, 228, 202);
+  margin: 0;
+  padding: 0.5em 0 0.5em 1em;
+  border-left: 5px solid black;
+}
+
+img[alt="Markdown logo"] {
+  width: 100px;
+  margin: 1em 0 1em 0;
+}
